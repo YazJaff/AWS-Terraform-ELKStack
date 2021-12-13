@@ -281,9 +281,9 @@ resource "aws_security_group" "logstash_sg" {
   ingress {
     description = "ingress rules"
     cidr_blocks = [ "0.0.0.0/0" ]
-    from_port = 5042#5044
+    from_port = 5042
     protocol = "tcp"
-    to_port = 5042#5044
+    to_port = 5042
   }
   egress {
     description = "egress rules"
