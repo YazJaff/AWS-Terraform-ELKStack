@@ -16,4 +16,22 @@ Pre-Work Tasks:
  > Load the private key to PuttyGen and generate .pem and .ppk private keys (keys in script location - elk_key.pem, elk_key.ppk)
  > Ensure OpenSSH Authentication Agent is running and generated .pem key is added to Pageant(Putty Authentication Agent)
 
+>>>>>>>>>>>>>>>>>.. Initialize, plan and apply ELK.tf.
 
+Post-Work Tasks:
+ > Status check:
+ > **Elasticsearch cluster status** – visit <public IP of any es node>:9200/_cluster/health
+ > **Elasticsearch nodes** – visit <public IP of any es node>:9200/_cat/nodes?v
+ > **Kibana** - <public IP of kibana ec2>:5601
+ >       Kibana Settings-> Index Patterns -> Add logstash index.
+ ***
+ If "logstash" index not available:
+ Check logs of each component by SSHing into each of them using command – “sudo systemctl status <component-name> -l”
+ ***
+ 
+ Verification: 
+ SSH into filebeat ec2 and add a sample log over by adding a .log file at /var/log/
+         echo "echo 'Pipedrive Sample log - 1' >> /var/log/PD-log.log" | sudo bash
+
+ After adding the log verify the log record in Kibana.
+ ===========================================================================XXXXXXXXXXXXXXXX======================================================================================
