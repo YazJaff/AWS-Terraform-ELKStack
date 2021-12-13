@@ -12,18 +12,19 @@ Kibana is configured to display logs from elasticsearch port 9200.
 Finally, the user can access these logs from the kibana dashboard.
 
 Pre-Work Tasks:
- > Create SSH public and private keys using "ss-keygen" command (keys in script location - elk_key, elk_key.pub)
- > Load the private key to PuttyGen and generate .pem and .ppk private keys (keys in script location - elk_key.pem, elk_key.ppk)
- > Ensure OpenSSH Authentication Agent is running and generated .pem key is added to Pageant(Putty Authentication Agent)
+  Create SSH public and private keys using "ss-keygen" command (keys in script location - elk_key, elk_key.pub)
+  Load the private key to PuttyGen and generate .pem and .ppk private keys (keys in script location - elk_key.pem, elk_key.ppk)
+  Ensure OpenSSH Authentication Agent is running and generated .pem key is added to Pageant(Putty Authentication Agent)
 
 >>>>>>>>>>>>>>>>>.. Initialize, plan and apply ELK.tf.
 
 Post-Work Tasks:
- > Status check:
- > **Elasticsearch cluster status** – visit <public IP of any es node>:9200/_cluster/health
- > **Elasticsearch nodes** – visit <public IP of any es node>:9200/_cat/nodes?v
- > **Kibana** - <public IP of kibana ec2>:5601
- >       Kibana Settings-> Index Patterns -> Add logstash index.
+ Status check:
+ **Elasticsearch cluster status** – visit <public IP of any es node>:9200/_cluster/health
+ **Elasticsearch nodes** – visit <public IP of any es node>:9200/_cat/nodes?v
+ **Kibana** - <public IP of kibana ec2>:5601
+        Kibana Settings-> Index Patterns -> Add logstash index.
+ 
  ***
  If "logstash" index not available:
  Check logs of each component by SSHing into each of them using command – “sudo systemctl status <component-name> -l”
@@ -34,4 +35,5 @@ Post-Work Tasks:
          echo "echo 'Pipedrive Sample log - 1' >> /var/log/PD-log.log" | sudo bash
 
  After adding the log verify the log record in Kibana.
- ===========================================================================XXXXXXXXXXXXXXXX======================================================================================
+ 
+ ===========================================================================
