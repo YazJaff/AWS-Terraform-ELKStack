@@ -12,8 +12,11 @@ Kibana is configured to display logs from elasticsearch port 9200.
 Finally, the user can access these logs from the kibana dashboard.
 
 Pre-Work Tasks:
-  Create SSH public and private keys using "ssh-keygen" command (keys in script location - elk_key, elk_key.pub)__
-  Load the private key to PuttyGen and generate .pem and .ppk private keys (keys in script location - elk_key.pem, elk_key.ppk)__
+
+  Create SSH public and private keys using "ssh-keygen" command (keys in script location - elk_key, elk_key.pub)
+  
+  Load the private key to PuttyGen and generate .pem and .ppk private keys (keys in script location - elk_key.pem, elk_key.ppk)
+  
   Ensure OpenSSH Authentication Agent is running and generated .pem key is added to Pageant(Putty Authentication Agent)__
 
 >>>>>>>>>>>>>>>>>.. Initialize, plan and apply ELK.tf.
