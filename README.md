@@ -14,4 +14,6 @@ Finally, the user can access these logs from the kibana dashboard.
 Pre-Work Tasks:
  > Create SSH public and private keys using "ss-keygen" command (keys in script location - elk_key, elk_key.pub)
  > Load the private key to PuttyGen and generate .pem and .ppk private keys (keys in script location - elk_key.pem, elk_key.ppk)
- > 
+ > Ensure OpenSSH Authentication Agent is running and generated .pem key is added to Pageant(Putty Authentication Agent)
+
+
