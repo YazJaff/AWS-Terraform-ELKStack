@@ -13,13 +13,17 @@ Finally, the user can access these logs from the kibana dashboard.
 
 Pre-Work Tasks:
 
- > Create SSH public and private keys using "ssh-keygen" command (keys in script location - elk_key, elk_key.pub)
+ > Clone YazJaff/AWS-Terraform-ELKStack and update provider.tf with relevant AWS access and secret access keys.
+ 
+ > Create SSH public and private keys using "ssh-keygen" command (keys to be generated in TF script location - elk_key, elk_key.pub) 
   
- > Load the private key to PuttyGen and generate .pem and .ppk private keys (keys in script location - elk_key.pem, elk_key.ppk)
+ > Load the private key to PuttyGen and generate .pem and .ppk private keys (keys to be generated in TF script location - elk_key.pem, elk_key.ppk)
   
  > Ensure OpenSSH Authentication Agent is running and generated .pem key is added to Pageant(Putty Authentication Agent)__
 
->>>>>>>>>>>>>>>>>.. Initialize, plan and apply ELK.tf.
+
+>>>>>>>>>>>>>>>>> Initialize, plan and apply ELK.tf.
+
 
 Post-Work Tasks:
 
