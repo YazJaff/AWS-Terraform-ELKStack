@@ -53,8 +53,10 @@ Post-Work Tasks:
  
  ===========================================================================
  
- Calculate time
+ Time efficiency
+ 
  Time taken to spin up and configure all nodes of the cluster 	-	6:30m
- Time taken to destroy                                      		 -	3:40m
+ 
+ Time taken to destroy provisioned resources                		 -	3:40m
  
  ===========================================================================
