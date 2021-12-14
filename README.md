@@ -1,4 +1,4 @@
-# AWS-Terraform-ELKStazck
+# AWS-Terraform-ELKStack
 Cluster of 3 Elasticsearch nodes+1 Logstash node(listening on TCP port 5042 and can write to Elasticsearch)+1 Kibana node(listening on a public interface and can read from Elasticsearch)+1 filebeat node
 
 Logs are created and stored inside /var/log
