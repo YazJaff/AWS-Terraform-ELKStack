@@ -17,7 +17,7 @@ Pre-Work Tasks:
  
  > Create SSH public and private keys using "ssh-keygen" command (keys to be generated in TF script location - elk_key, elk_key.pub) 
   
- > Load the private key to PuttyGen and generate .pem and .ppk private keys (keys to be generated in TF script location - elk_key.pem, elk_key.ppk)
+ > Load the private key to PuttyGen and generate .pem and .ppk private keys (keys to be generated in TF script location - elk_key.pem)
   
  > Ensure OpenSSH Authentication Agent is running and generated .pem key is added to Pageant(Putty Authentication Agent)__
 
