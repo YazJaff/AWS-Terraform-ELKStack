@@ -45,6 +45,12 @@ Post-Work Tasks:
   
         echo "echo 'Pipedrive Sample log - 1' >> /var/log/PD-log.log" | sudo bash
 
- After adding the log verify the log record in Kibana.
+ After adding the log in filebeat, verify the log record in Kibana.
+ 
+ ===========================================================================
+ 
+ Calculate time
+ Time taken to spin up and configure all nodes of the cluster 	-	6:30m
+ Time taken to destroy                                      		 -	3:40m
  
  ===========================================================================
